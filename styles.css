@@ -1,7 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('fond.jpg');
-    background-position: top;
+    background-color: #69B7E2; /* Couleur de fond derrière l'image */
+    background-image: url('img/fond.jpg');
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center;
+    background-size: auto; /* Utiliser la taille originale de l'image */
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,6 +14,9 @@ body {
     text-align: center;
     color: #ffffff; /* Couleur du texte pour le contenu */
 }
+
+
+
 
 .navbar {
     overflow: hidden;
@@ -40,7 +46,7 @@ body {
     margin-top: 70px; /* Ajustement pour éviter que la navbar ne cache le contenu */
 }
 
-.box {
+.box  {
     background-color: rgba(15, 32, 38, 0.8); /* Couleur avec 50% d'opacité */
     padding: 20px;
     margin-bottom: 20px;
@@ -58,6 +64,7 @@ body {
 }
 
 h1 {
+    margin-top: 0; /* Réinitialise la marge */
     font-size: 36px;
     margin-bottom: 10px;
 }
@@ -75,4 +82,13 @@ h1 {
         float: none;
         display: inline-block;
     }
+}
+
+ul, ol {
+    list-style: none; /* Supprime les puces pour les listes non ordonnées et ordonnées */
+}
+
+/* Facultatif : style personnalisé pour les éléments de liste */
+li {
+    margin-bottom: 10px; /* Ajoute un espacement entre les éléments de liste */
 }
