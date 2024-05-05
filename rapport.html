@@ -1,56 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+    <!-- Définition de l'encodage de caractères -->
+    <meta charset="UTF-8">
+    <!-- Titre de la page -->
+    <title>Rapport - BTS SIO</title>
+    <!-- Liaison vers la feuille de style externe -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Style CSS interne pour l'élément embed -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+        embed {
+            opacity: 0.9; /* Ajustez la valeur entre 0 (transparent) et 1 (opaque) selon vos préférences */
         }
     </style>
 </head>
 <body>
 
+<!-- Section de la barre de navigation -->
 <div class="navbar">
-  <a href="accueil.html">Accueil</a>
-  <a href="profil.html">Profil</a>
-  <a href="btssio.html">BTS SIO</a>
-  <a href="veille.html">Veille Technologiue</a>
-  <a href="sécurité.html">Sécurité Informatique</a>
-  <a href="rapport.html">Rapport</a>
+    <!-- Liens vers les différentes pages, avec le lien vers Rapport actif -->
+    <a href="accueil.html">Accueil</a>
+    <a href="profil.html">Profil</a>
+    <a href="btssio.html">BTS SIO</a>
+    <a href="veille.html">Veille Technologique</a>
+    <a href="sécurité.html">Sécurité Informatique</a>
+    <a href="rapport.html" class="active">Rapport</a>
     <a href="contact.html">Contact</a>
-    
 </div>
 
-<div id="Accueil">
-  <h2>Accueil</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-
-<div id="Profil">
-  <h2>Profil</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-
-<!-- Ajoutez des sections similaires pour les autres onglets -->
-
-<script>
-// Ajoutez votre code JavaScript ici
-</script>
+<!-- Insertion du rapport PDF via l'élément embed -->
+<embed src="pdf/RapportAlternance.pdf" type="application/pdf" width="100%" height="800px" />
 
 </body>
 </html>
